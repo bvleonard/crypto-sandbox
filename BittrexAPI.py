@@ -7,12 +7,13 @@ import json
 import time
 import hmac
 import hashlib
+import config
 
 class bittrex(object):
     
     def __init__(self, key, secret):
-        self.key = 'dbe1d959ed2242ce8331dd24e80ecdf2'
-        self.secret = '1c52da735c1041d2979a5409822748e6' 
+        self.key = config.bitrexKey
+        self.secret = config.bitrexSecret
         self.public = ['getmarkets', 'getcurrencies', 'getticker', 'getmarketsummaries', 'getmarketsummary', 'getorderbook', 'getmarkethistory']
         self.market = ['buylimit', 'buymarket', 'selllimit', 'sellmarket', 'cancel', 'getopenorders']
         self.account = ['getbalances', 'getbalance', 'getdepositaddress', 'withdraw', 'getorder', 'getorderhistory', 'getwithdrawalhistory', 'getdeposithistory']

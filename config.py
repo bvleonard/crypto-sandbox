@@ -1,0 +1,2 @@
+bitrexKey = ''
+bitrexSecret = ''

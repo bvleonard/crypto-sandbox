@@ -110,4 +110,3 @@ class bittrex(object):
     
     def getdeposithistory(self, currency, count):
         return self.query('getdeposithistory', {'currency': currency, 'count': count})
-getbalance(self)
